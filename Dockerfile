@@ -12,8 +12,7 @@ RUN mv /v2raybin/v2ray-v$VER-linux-64/v2ray /v2raybin/ \
  && mv /v2raybin/v2ray-v$VER-linux-64/geoip.dat /v2raybin/ \
  && mv /v2raybin/v2ray-v$VER-linux-64/geosite.dat /v2raybin/ 
 
-RUN 
- && chmod +x /v2raybin/v2ray \
+RUN chmod +x /v2raybin/v2ray \
  && rm -rf v2ray.zip \
  && rm -rf v2ray-v$VER-linux-64 \
  && chgrp -R 0 /v2raybin \
